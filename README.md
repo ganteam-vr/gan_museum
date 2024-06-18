@@ -2,7 +2,7 @@
 
 ## Zero123 Checkpoint
 
-Download the checkpoint from https://huggingface.co/stabilityai/stable-zero123/blob/main/stable_zero123.ckpt and save it to threestudio/load/
+Download the checkpoint from https://huggingface.co/stabilityai/stable-zero123/blob/main/stable_zero123.ckpt and save it to threestudio/load/zero123
 
 ## Wuertschen checkpoint (instructions from stage_c notebook in official wuerstchen repo)
 wget https://huggingface.co/dome272/wuerstchen/resolve/main/model_stage_b.pt
