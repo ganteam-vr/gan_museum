@@ -39,3 +39,6 @@ git+https://github.com/openai/CLIP.git
 
 #controlnet
 controlnet_aux
+
+# for background removal script, not for threestudio
+transparent-background==1.2.12
