@@ -26,7 +26,7 @@ wget https://huggingface.co/dome272/wuerstchen/resolve/main/vqgan_f4_v1_500k.pt
 mv vqgan_f4_v1_500k.pt wuerstchen/models
 mv model_* wuerstchen/models
 
-Zero123
+### Zero123
 
 After generating the initial images with the Würstchen Diffusion Model, the process moves to the Zero123 phase. Zero123 is a model that transforms these 2D images into full 3D reconstructions from a single RGB image using advanced camera viewpoint adjustments. This phase enhances the immersive experience by creating detailed and accurate 3D models.
 Checkpoint
@@ -34,9 +34,11 @@ Checkpoint
 To use the Zero123 model, download the checkpoint from the following link and save it to the specified directory:
 Download the checkpoint from [https://huggingface.co/stabilityai/stable-zero123/blob/main/stable_zero123.ckpt](https://huggingface.co/stabilityai/stable-zero123/blob/main/stable_zero123.ckpt) and save it to `threestudio/load/zero123`
 
-Directory Structure
+### Directory Structure
 
 Ensure your project directory is structured as follows to accommodate the checkpoints:
+
+```lua
 
 project_root/
 ├── wuerstchen/
