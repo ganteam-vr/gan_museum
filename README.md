@@ -19,7 +19,6 @@ This phase serves as the starting point for our generative AI workflow. The Wür
 
 To use the Würstchen Diffusion Model, you need to download the following checkpoints and place them in the appropriate directory:
 
-```sh
 wget https://huggingface.co/dome272/wuerstchen/resolve/main/model_stage_b.pt
 wget https://huggingface.co/dome272/wuerstchen/resolve/main/model_stage_c_ema.pt
 wget https://huggingface.co/dome272/wuerstchen/resolve/main/vqgan_f4_v1_500k.pt
@@ -34,3 +33,18 @@ Checkpoint
 
 To use the Zero123 model, download the checkpoint from the following link and save it to the specified directory:
 Download the checkpoint from [https://huggingface.co/stabilityai/stable-zero123/blob/main/stable_zero123.ckpt](https://huggingface.co/stabilityai/stable-zero123/blob/main/stable_zero123.ckpt) and save it to `threestudio/load/zero123`
+
+Directory Structure
+
+Ensure your project directory is structured as follows to accommodate the checkpoints:
+
+project_root/
+├── wuerstchen/
+│   ├── models/
+│   │   ├── model_stage_b.pt
+│   │   ├── model_stage_c_ema.pt
+│   │   ├── vqgan_f4_v1_500k.pt
+├── threestudio/
+│   ├── load/
+│   │   ├── zero123/
+│   │   │   ├── stable_zero123.ckpt
