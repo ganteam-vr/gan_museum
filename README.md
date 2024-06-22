@@ -21,7 +21,7 @@ This phase serves as the starting point for our generative AI workflow. The Wür
 git clone https://github.com/dome272/Wuerstchen.git
 ```
 
-#### Checkpoints
+## Checkpoints
 
 To use the Würstchen Diffusion Model, you need to download the following checkpoints and place them in the appropriate directory:
 
