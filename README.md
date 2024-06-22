@@ -51,7 +51,7 @@ conda activate threestudio
 # Install packages using pip
 pip install torch==2.1.2+cu121 torchvision torchaudio -f https://download.pytorch.org/whl/cu121/torch_stable.html
 pip install ninja
-pip install -r requirements_threestudio.txt
+pip install -r threestudio_req.txt
 
 ```
 
@@ -60,7 +60,7 @@ pip install -r requirements_threestudio.txt
 conda activate wuerstchen
 
 # Install packages using pip
-pip install -r requirements
+pip install -r wuerstchen_req.txt
 
 # Also install pytorch
 pip install torch==2.1.2+cu121 torchvision torchaudio -f https://download.pytorch.org/whl/cu121/torch_stable.html
