@@ -19,9 +19,9 @@ This phase serves as the starting point for our generative AI workflow. The Wür
 
 To use the Würstchen Diffusion Model, you need to download the following checkpoints and place them in the appropriate directory:
 
-wget https://huggingface.co/dome272/wuerstchen/resolve/main/model_stage_b.pt //
-wget https://huggingface.co/dome272/wuerstchen/resolve/main/model_stage_c_ema.pt //
-wget https://huggingface.co/dome272/wuerstchen/resolve/main/vqgan_f4_v1_500k.pt //
+wget https://huggingface.co/dome272/wuerstchen/resolve/main/model_stage_b.pt
+wget https://huggingface.co/dome272/wuerstchen/resolve/main/model_stage_c_ema.pt
+wget https://huggingface.co/dome272/wuerstchen/resolve/main/vqgan_f4_v1_500k.pt
 
 mv vqgan_f4_v1_500k.pt wuerstchen/models
 mv model_* wuerstchen/models
