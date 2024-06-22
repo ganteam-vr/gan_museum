@@ -23,13 +23,13 @@ Checkpoint. The Zero123 model is made availabe with the threestudio framework.
 
 ### Installation instructions
 
-#### Clone the wuerstchen repository
+#### 1. Clone the wuerstchen repository
 ```sh
 # It is expected to overwrite the placeholder wuerstchen directory with the following repo
 git clone https://github.com/dome272/Wuerstchen.git
 ```
 
-#### Checkpoints for Wuerstchen
+#### 2. Checkpoints for Wuerstchen
 
 To use the Wuerstchen Diffusion Model, you need to download the following checkpoints and place them in the appropriate directory:
 
@@ -41,13 +41,13 @@ wget https://huggingface.co/dome272/wuerstchen/resolve/main/vqgan_f4_v1_500k.pt
 ```
 
 
-#### Clone our fork of the threestudio repository
+#### 3. Clone our fork of the threestudio repository
 ```sh
 # It is expected to overwrite the placeholder threestudio directory with the following repo
 git clone https://github.com/ganteam-vr/threestudio.git
 ```
 
-#### Checkpoints for Zero123
+#### 4. Checkpoints for Zero123
 
 To use the Zero123 model, download the checkpoint from the following link and save it to the specified directory:
 Download the checkpoint from 
@@ -56,7 +56,7 @@ https://huggingface.co/stabilityai/stable-zero123/blob/main/stable_zero123.ckpt
 ```
 and save it to `threestudio/load/zero123`
 
-## Directory Structure
+#### 5. Directory Structure
 
 Ensure your project directory is structured as follows to accommodate the checkpoints:
 
