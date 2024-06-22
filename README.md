@@ -44,7 +44,11 @@ git clone https://github.com/ganteam-vr/threestudio.git
 ```
 
 To use the Zero123 model, download the checkpoint from the following link and save it to the specified directory:
-Download the checkpoint from [https://huggingface.co/stabilityai/stable-zero123/blob/main/stable_zero123.ckpt](https://huggingface.co/stabilityai/stable-zero123/blob/main/stable_zero123.ckpt) and save it to `threestudio/load/zero123`
+Download the checkpoint from 
+```sh
+https://huggingface.co/stabilityai/stable-zero123/blob/main/stable_zero123.ckpt
+```
+and save it to `threestudio/load/zero123`
 
 ## Directory Structure
 
