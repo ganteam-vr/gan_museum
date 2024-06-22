@@ -141,3 +141,12 @@ The JSON input should follow this format:
 }
 ```
 Response contains the path of the folder in which the generated .obj files for the 3D object are placed.
+
+### Requirements
+Before you begin, ensure you have met the following requirements:
+
+Operating System: Ubuntu
+Python version: 3.8+
+
+### Acknowledgements
+We would like to thank Goud jaar, Ameen Quarshi, Asharab Heidr, Tawfik Abouaish for contributing in that project
