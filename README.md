@@ -131,3 +131,12 @@ To run the Wuerstchen and Threestudio environments on WSL, follow these steps:
 
 By following these instructions, you will have the Wuerstchen server and the main server running in their respective conda environments on WSL.
 
+### Generating objects
+To generate objects send a JSON formatted HTTP Request to the configured server ip and port in the server_config.yaml
+The JSON input should follow this format:
+
+```json
+{
+  "tag": "PROMPT"
+}
+
