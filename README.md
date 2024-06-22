@@ -125,23 +125,11 @@ To run the Wuerstchen and Threestudio environments on WSL, follow these steps:
 
 ##### Step 1: Start Two Ubuntu Instances as Admin
 
-1. Open Windows Terminal:
-   - Launch the Windows Terminal or your preferred terminal emulator.
+1. Start the First Ubuntu Instance:
+   - Search Ubuntu in Windows search and run Ubuntu as administrator
 
-2. Start the First Ubuntu Instance:
-   - Open a new tab or window in the terminal.
-   - Run the following command to start the first Ubuntu instance as an administrator:
-     ```sh
-     wsl -d Ubuntu-20.04
-     ```
-   - Note: Replace `Ubuntu-20.04` with the name of your WSL distribution if different.
-
-3. Start the Second Ubuntu Instance:
-   - Open another new tab or window in the terminal.
-   - Run the same command to start the second Ubuntu instance as an administrator:
-     ```sh
-     wsl -d Ubuntu-20.04
-     ```
+2. Start the Second Ubuntu Instance:
+   - Search Ubuntu in Windows search and run Ubuntu as administrator
 
 ##### Step 2: Activate the Conda Environments
 
