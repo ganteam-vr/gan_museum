@@ -1,5 +1,3 @@
-# gan_museum
-
 # Generative AI for 3D Object Creation
 
 Welcome to our project on generative AI for creating 3D objects! Our innovative approach involves developing two interconnected virtual environments that work together to transform text inputs into fully reconstructed 3D models.
