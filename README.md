@@ -139,4 +139,5 @@ The JSON input should follow this format:
 {
   "tag": "PROMPT"
 }
-
+```
+Response contains the path of the folder in which the generated .obj files for the 3D object are placed.
