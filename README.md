@@ -21,7 +21,8 @@ Checkpoint. The Zero123 model is made availabe with the threestudio framework.
 ## Requirements
 Before you begin, ensure you have met the following requirements:
 
-Operating System: Ubuntu
+Operating System: Ubuntu >= 20.04
+
 Python version: 3.8+
 
 ### Installation instructions
