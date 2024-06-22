@@ -19,9 +19,51 @@ After generating the initial images with the Würstchen Diffusion Model, the pro
 Checkpoint. The Zero123 model is made availabe with the threestudio framework.
 
 ## Requirements
-...
+Before you begin, ensure you have met the following requirements:
+
+Operating System: Ubuntu
+Python version: 3.8+
 
 ### Installation instructions
+#### Step 1: Install Anaconda/Miniconda
+First, make sure you have Anaconda or Miniconda installed on your system. You can download and install Miniconda from here.
+
+#### Step 2: Install CUDA 12.1
+Download CUDA 12.1 from the NVIDIA CUDA Toolkit website.
+Follow the installation instructions for your operating system.
+#### Step 3: Create Conda Environments with Python 3.10
+To create two Conda environments with Python 3.10, use the following commands in your terminal or Anaconda prompt:
+```sh
+# Create the first environment
+conda create --name env1 python=3.10
+
+# Create the second environment
+conda create --name env2 python=3.10
+
+```
+#### Step 4: Activate the Environments and Install Packages with Pip
+You need to activate each environment separately and install the desired packages using pip. Here is how you do it:
+
+```sh
+# Activate the first environment
+conda activate env1
+
+# Install packages using pip
+pip install <package_name_1> <package_name_2> ...
+
+```
+Replace <package_name_1> <package_name_2> ... with the actual package names you want to install.
+
+```sh
+# Activate the first environment
+conda activate env1
+
+# Install packages using pip
+pip install <package_name_1> <package_name_2> ...
+
+```
+Replace <package_name_1> <package_name_2> ... with the actual package names you want to install.
+
 
 #### 1. Clone the wuerstchen repository
 ```sh
@@ -73,7 +115,6 @@ project_root/
 │   │   ├── zero123/
 │   │   │   ├── stable_zero123.ckpt
 ```
-### Run instructions
 
 #### Running Instructions for WSL Users
 
@@ -142,11 +183,6 @@ The JSON input should follow this format:
 ```
 Response contains the path of the folder in which the generated .obj files for the 3D object are placed.
 
-### Requirements
-Before you begin, ensure you have met the following requirements:
-
-Operating System: Ubuntu
-Python version: 3.8+
 
 ### Acknowledgements
 We would like to thank Goud jaar, Ameen Quarshi, Asharab Heidr, Tawfik Abouaish for contributing in that project
