@@ -35,35 +35,37 @@ Follow the installation instructions for your operating system.
 To create two Conda environments with Python 3.10, use the following commands in your terminal or Anaconda prompt:
 ```sh
 # Create the first environment
-conda create --name env1 python=3.10
+conda create --name threestudio python=3.10
 
 # Create the second environment
-conda create --name env2 python=3.10
+conda create --name wuerstchen python=3.10
 
 ```
 #### Step 4: Activate the Environments and Install Packages with Pip
-You need to activate each environment separately and install the desired packages using pip. Here is how you do it:
+You need to activate each environment separately and install the desired packages using pip. Here is how you do it (inspired from https://jordain.ca/blog/threestudio-stablezero123/):
 
 ```sh
 # Activate the first environment
-conda activate env1
+conda activate threestudio
 
 # Install packages using pip
-pip install <package_name_1> <package_name_2> ...
+pip install torch==2.1.2+cu121 torchvision torchaudio -f https://download.pytorch.org/whl/cu121/torch_stable.html
+pip install ninja
+pip install -r requirements_threestudio.txt
 
 ```
-Replace <package_name_1> <package_name_2> ... with the actual package names you want to install.
 
 ```sh
 # Activate the first environment
-conda activate env1
+conda activate wuerstchen
 
 # Install packages using pip
-pip install <package_name_1> <package_name_2> ...
+pip install -r requirements
+
+# Also install pytorch
+pip install torch==2.1.2+cu121 torchvision torchaudio -f https://download.pytorch.org/whl/cu121/torch_stable.html
 
 ```
-Replace <package_name_1> <package_name_2> ... with the actual package names you want to install.
-
 
 #### 1. Clone the wuerstchen repository
 ```sh
