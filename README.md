@@ -81,10 +81,10 @@ To run the Wuerstchen and Threestudio environments on WSL, follow these steps:
 
 ##### Step 1: Start Two Ubuntu Instances as Admin
 
-1. **Open Windows Terminal**:
+1. Open Windows Terminal:
    - Launch the Windows Terminal or your preferred terminal emulator.
 
-2. **Start the First Ubuntu Instance**:
+2. Start the First Ubuntu Instance:
    - Open a new tab or window in the terminal.
    - Run the following command to start the first Ubuntu instance as an administrator:
      ```sh
@@ -92,7 +92,7 @@ To run the Wuerstchen and Threestudio environments on WSL, follow these steps:
      ```
    - Note: Replace `Ubuntu-20.04` with the name of your WSL distribution if different.
 
-3. **Start the Second Ubuntu Instance**:
+3. Start the Second Ubuntu Instance:
    - Open another new tab or window in the terminal.
    - Run the same command to start the second Ubuntu instance as an administrator:
      ```sh
@@ -101,13 +101,13 @@ To run the Wuerstchen and Threestudio environments on WSL, follow these steps:
 
 ##### Step 2: Activate the Conda Environments
 
-1. **Activate Threestudio Environment in the First Instance**:
+1. Activate Threestudio Environment in the First Instance:
    - In the first Ubuntu instance, activate the conda environment for Threestudio:
      ```sh
      conda activate threestudio
      ```
 
-2. **Activate Wuerstchen Environment in the Second Instance**:
+2. Activate Wuerstchen Environment in the Second Instance:
    - In the second Ubuntu instance, activate the conda environment for Wuerstchen:
      ```sh
      conda activate wuerstchen
@@ -115,14 +115,14 @@ To run the Wuerstchen and Threestudio environments on WSL, follow these steps:
 
 ##### Step 3: Start the Servers
 
-1. **Start the Wuerstchen Server**:
+1. Start the Wuerstchen Server:
    - In the second Ubuntu instance (with the Wuerstchen environment activated), run the following command to start the Wuerstchen server:
      ```sh
      # Important: Run this command in the root directory of this repo
      python run_wuerstchen.py
      ```
 
-3. **Start the Main Server**:
+3. Start the Main Server:
    - In the first Ubuntu instance (with the Threestudio environment activated), run the following command to start the main server:
      ```sh
      # Important: Run this command in the root directory of this repo
