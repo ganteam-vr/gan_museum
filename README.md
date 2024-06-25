@@ -31,7 +31,7 @@ First, make sure you have Anaconda or Miniconda installed on your system. You ca
 
 #### Step 2: Install CUDA 12.1
 Download CUDA 12.1 from the NVIDIA CUDA Toolkit website.
-Follow the installation instructions for your operating system.
+Follow the installation instructions for your operating system. (For WSL we used the following guide: https://jordain.ca/blog/threestudio-stablezero123/)
 #### Step 3: Create Conda Environments with Python 3.10
 To create two Conda environments with Python 3.10, use the following commands in your terminal or Anaconda prompt:
 ```sh
