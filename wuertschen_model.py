@@ -32,7 +32,8 @@ class WuertschenModel:
         return self.vqmodel.decode(img_seq)
 
 
-    def __init__(self) -> None:
+    def __init__(self, images_path: str) -> None:
+        self.__images_path = images_path
 
         transformers.utils.logging.set_verbosity_error()
         self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -155,7 +156,7 @@ class WuertschenModel:
         image_numpy = np.clip(image_numpy.numpy(), 0, 1)
 
         # Save PIL image to file
-        path = Path(f"/mnt/d/gan/threestudio/images/generated_image_{str(generated_uuid)[:20]}.png")
+        path = Path(self.__images_path) / Path(f"/generated_image_{str(generated_uuid)[:20]}.png")
         plt.imsave(path, image_numpy)
         print(f"Saved image to {path.as_posix()}")
         return path

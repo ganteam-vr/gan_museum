@@ -3,6 +3,8 @@ import threading
 from wuertschen_model import WuertschenModel
 from server_config import get_server_info
 import time
+import argparse
+
 
 model: WuertschenModel = None
 
@@ -37,7 +39,7 @@ def handle_client(client_socket, address):
     client_socket.close()
     print(f"Connection with {address} closed")
 
-def start_server():
+def start_server(images_path: str):
     global model 
     
     # Choose any available port
@@ -45,7 +47,7 @@ def start_server():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.bind((host, port - 1))
     server_socket.listen(5)
-    model= WuertschenModel()
+    model= WuertschenModel(images_path)
     print(f"Server listening on {host}:{port - 1}")
     
     try:
@@ -60,6 +62,10 @@ def start_server():
 
 
 if __name__ == "__main__":
-    start_server()
+    parser = argparse.ArgumentParser(description="Give the path to directory where images will be stored.")
+    parser.add_argument('images_path', type=str, help='The path to the images directory')
+
+    args = parser.parse_args()
+    start_server(args.images_path)
 
     
