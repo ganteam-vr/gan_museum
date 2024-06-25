@@ -143,7 +143,7 @@ def create_3d(input_string: str):
         # Now the model exports are saved to /model_runs
         new_path = f'/outputs/zero123-sai/model_run_{datetime.now().strftime("%Y-%m-%d-%H-%M-%S")}'
         os.rename(os.getcwd() + '/outputs/zero123-sai/model_runs', os.getcwd() + new_path )
-        complete_path = 'D:/gan/threestudio' + new_path + "/save/it400-export"
+        complete_path = os.getcwd()  + new_path + "/save/it400-export"
         return complete_path
     else:
         print("Got no 2d image")
