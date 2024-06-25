@@ -63,7 +63,7 @@ def start_server(images_path: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Give the path to directory where images will be stored.")
-    parser.add_argument('images_path', type=str, help='The path to the images directory')
+    parser.add_argument('--images_path', type=str, help='The path to the images directory')
 
     args = parser.parse_args()
     start_server(args.images_path)
